@@ -1,0 +1,18 @@
+[
+  { "color": "red", "status": "clicked" },
+  { "color": "red", "status": "clicked" },
+  { "color": "green", "status": "clicked" },
+  { "color": "green", "status": "clicked" },
+  { "color": "pink", "status": "clicked" },
+  { "color": "pink", "status": "clicked" },
+  { "color": "skyblue", "status": "clicked" },
+  { "color": "skyblue", "status": "clicked" },
+  { "color": "orange", "status": "clicked" },
+  { "color": "orange", "status": "clicked" },
+  { "color": "thistle", "status": "clicked" },
+  { "color": "thistle", "status": "clicked" },
+  { "color": "fuchsia", "status": "clicked" },
+  { "color": "fuchsia", "status": "clicked" },
+  { "color": "teal", "status": "clicked" },
+  { "color": "teal", "status": "clicked" }
+]
