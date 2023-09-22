@@ -1,24 +1,10 @@
 import React, { useState } from 'react';
 import Game from './game';
 import CountDown from './counter';
-import {
-  View,
-  Text,
-  StyleSheet,
-  TouchableHighlight,
-  Pressable,
-} from 'react-native';
+import { View, Text, StyleSheet, Pressable } from 'react-native';
 
 const HomePage = () => {
   const [clicked, setClicked] = useState(false);
-  const [timesPressed, setTimesPressed] = useState(0);
-
-  let textLog = '';
-  if (timesPressed > 1) {
-    textLog = timesPressed + 'x onPress';
-  } else if (timesPressed > 0) {
-    textLog = 'onPress';
-  }
 
   const handleClick = () => {
     setClicked(true);
@@ -38,7 +24,7 @@ const HomePage = () => {
         style={styles.playButton}
       >
         <View style={styles.button}>
-          <Text>Play</Text>
+          <Text style={styles.buttonText}>Start Game</Text>
         </View>
       </View>
     </Pressable>
@@ -54,6 +40,7 @@ const HomePage = () => {
 
 const styles = StyleSheet.create({
   container: {
+    color: 'white',
     display: 'flex',
     alignItems: 'center',
     gap: 10,
@@ -63,12 +50,16 @@ const styles = StyleSheet.create({
   },
   playButton: {
     height: 50,
-    width: 100,
+    width: 150,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'gray',
   },
+  buttonText: {
+    color: 'white',
+    fontSize: 20
+  }
 });
 
 export default HomePage;

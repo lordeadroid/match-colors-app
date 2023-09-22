@@ -44,14 +44,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   cell: {
-    width: 90,
+    width: 80,
     aspectRatio: 1,
-    paddingHorizontal: 8,
-    paddingVertical: 6,
-    borderRadius: 50,
+    borderRadius: 7,
     alignSelf: 'flex-start',
-    marginHorizontal: '1%',
-    marginBottom: 6,
+    marginHorizontal: 5,
+    marginBottom: 10,
     textAlign: 'center',
   },
 });
