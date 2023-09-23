@@ -29,17 +29,20 @@ const Game = () => {
     }, 500);
   };
 
-  const check = () => {
-    const status = click[0].color === click[1].color ? 'done' : 'closed';
-    update(click[0], click[1], status);
+  const check = (index, color) => {
+    const status = click[0].color === color ? 'done' : 'closed';
+    update(click[0], { index, color }, status);
   };
 
   const handleClick = (index, color) => {
     cellDetails[index].status = 'clicked';
     setCellDetails([...cellDetails]);
-    click.push({ color, index });
-    setClicks([...click]);
-    if (click.length === 2) return check();
+    if (setClicks.length === 0) {
+      click.push({ color, index });
+      setClicks([...click]);
+      return;
+    }
+    check(index, color);
   };
 
   return <Cells cellDetails={cellDetails} handleClick={handleClick} />;
