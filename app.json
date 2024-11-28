@@ -1,5 +1,6 @@
 {
   "expo": {
+    "newArchEnabled": true,
     "name": "Match Colors",
     "slug": "match-colors",
     "version": "1.0.0",

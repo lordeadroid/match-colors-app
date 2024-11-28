@@ -26,7 +26,7 @@ const Game = () => {
       cellDetails[second.index].status = status;
       setCellDetails([...cellDetails]);
       setClicks([]);
-    }, 500);
+    }, 250);
   };
 
   const check = (index, color) => {
@@ -37,7 +37,7 @@ const Game = () => {
   const handleClick = (index, color) => {
     cellDetails[index].status = 'clicked';
     setCellDetails([...cellDetails]);
-    if (setClicks.length === 0) {
+    if (click.length === 0) {
       click.push({ color, index });
       setClicks([...click]);
       return;
